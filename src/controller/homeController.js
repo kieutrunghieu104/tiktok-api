@@ -2,4 +2,4 @@ const homeDefault = (req, res) => {
   res.render("home");
 }
 
-module.exports = homeDefault;
+export default homeDefault;

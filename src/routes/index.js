@@ -1,6 +1,7 @@
-const newsRouters = require("./news");
-const homeRouters = require("./home");
-const searchRouters = require("./search");
+import newsRouters from "./news.js";
+import homeRouters from "./home.js";
+import searchRouters from "./search.js";
+
 const routers = (app) => {
   // home
   app.use("/", homeRouters);
@@ -11,4 +12,4 @@ const routers = (app) => {
   app.use("/search", searchRouters);
 }
 
-module.exports = routers;
+export default routers;
